@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     
     validation.disabled = true;
-//    var dragged;
+    var dragged;
 
     /* events fired on the draggable target */
     document.addEventListener ("drag", function (event) {

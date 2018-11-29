@@ -87,14 +87,16 @@
         
         <div id="right" class="container">
            <!--Animation-->
-       <!--    <div class="webgl-content" style="position: relative">
-              <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
-              <div class="footer">
-                <div class="webgl-logo"></div>
-                <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                <div class="title">animation2D</div>
+           <div class="webgl-content" style="position: relative">
+                <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
+<!--
+                <div class="footer">
+                    <div class="webgl-logo"></div>
+                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                    <div class="title">animation2D</div>
               </div>
-            </div>-->
+-->
+            </div>
             
         </div>
         
