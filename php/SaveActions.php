@@ -11,7 +11,7 @@ if(!empty($_POST))
     
  
    
-  $fp = fopen('JsonFiles/JsonFilesresults.json', 'w');
+  $fp = fopen('../JsonFiles/JsonFilesresults.json', 'w');
   fwrite($fp, json_encode($response));
   fclose($fp);
 }
