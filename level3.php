@@ -52,7 +52,7 @@
                     
                     <div id="codeText">
                         <p class="bigtext">
-                            robot. 
+                            Sparky. 
                         </p>
                         <div>
                             <div id="solution" class="dropzone"></div>
@@ -95,11 +95,10 @@
     </main>
     
     <footer>
-    
-        <p>
-            
-        </p>
-
+        <nav class="col-md-12">
+            <a id="prec" href="level2.php" class="btn btn-sample">Niveau précédent</a>
+            <a id="next" class="not-active btn btn-sample" href="level4.php">Niveau suivant</a>
+        </nav>
     </footer>
 
 </body>

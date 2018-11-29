@@ -59,7 +59,7 @@
                             <p class="bigtext">){</p>
                         </div>
                         <div>
-                            <p class="bigtext">robot.recharge();</p>
+                            <p class="bigtext">Sparky.recharge();</p>
                         </div>
                         
                         <div>
@@ -101,11 +101,10 @@
     </main>
     
     <footer>
-    
-        <p>
-            
-        </p>
-
+        <nav class="col-md-12">
+            <a id="prec" href="./level3.php" class="btn btn-sample">Niveau précédent</a>
+            <a id="next" class="not-active btn btn-sample" href="level5.php">Niveau suivant</a>
+        </nav>
     </footer>
 
 </body>

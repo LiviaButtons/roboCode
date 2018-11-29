@@ -52,7 +52,7 @@
                     
                     <div id="codeText">
                         <p class="bigtext">
-                            robot.marche ("
+                            Sparky.marche ("
                             
                         </p>
                         <div>
