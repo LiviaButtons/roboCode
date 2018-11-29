@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", function (event) {
    validation.addEventListener("click", function(){
        
-       var xhr = new XMLHttpRequest();
+        // activate the "next level" button
+        next.classList.remove("not-active");
+
+        var xhr = new XMLHttpRequest();
         
         xhr.onreadystatechange = function (){
             if (xhr.readyState == 4){
                 if (xhr.status == 200){
-                    console.log('Vous avez réussi!');
-                    console.log(correct.innerHTML);
+//                    console.log('Vous avez réussi!');
+//                    console.log(correct.innerHTML);
                 }
                 else {
                     console.log ("Erreur dans AJAX");
