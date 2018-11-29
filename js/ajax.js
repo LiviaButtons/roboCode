@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
        
         // activate the "next level" button
         next.classList.remove("not-active");
+       
+        // grow the progress bar
+        if (progressBar.style.width == "0%") {
+            progressBar.style.width = "20%";
+        } else if (progressBar.style.width == "20%") {
+            progressBar.style.width = "40%";
+        } else if (progressBar.style.width == "40%") {
+            progressBar.style.width = "60%";
+        } else if (progressBar.style.width == "60%") {
+            progressBar.style.width = "80%";
+        }else if (progressBar.style.width == "80%") {
+            progressBar.style.width = "100%";
+        }
+       
+        progressBar.innerHTML = progressBar.style.width + " complete";
 
         var xhr = new XMLHttpRequest();
         

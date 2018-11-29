@@ -72,7 +72,7 @@
                 
                 <!--Progress bar-->
                 <div class="progress progresJeu" style="position: relative">
-                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40% Complete
+                    <div id="progressBar" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40% complete
                     </div>
                 </div>
                 
@@ -81,15 +81,21 @@
         
         <div id="right" class="container">
            <!--Animation-->
+<!--
            <div class="webgl-content" style="position: relative">
-              <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
-              <div class="footer">
-                <div class="webgl-logo"></div>
-                <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                <div class="title">animation2D</div>
-              </div>
+                <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
+-->
+<!--
+                <div class="footer">
+                    <div class="webgl-logo"></div>
+                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                    <div class="title">animation2D</div>
+                </div>
+-->
+<!--
             </div>
             
+-->
         </div>
         
     </main>
