@@ -16,8 +16,8 @@
         <div id="left" class="container">
           <div class="col-md-12">
             <h1>Robocode</h1>
-                <p>Donne ton prénom au robot et il te dira bonjour!
-                 Tu viens ainsi de rajouter ton prénom au paramètre de l'action ".parl" faite par robot "Robot" </p>
+                <p>Donne ton prénom à Sparky et il te dira bonjour!
+                 Tu viens ainsi de rajouter ton prénom au paramètre de l'action ".parle" faite par robot Sparky </p>
                 
 <!--
                <div id="btnInput">
@@ -43,7 +43,7 @@
                     
                     <div id="codeText">
                         <p>
-                            Robot.parle ("Hello  
+                            Sparky.parle ("Hello  
                             
                         </p>
                         <input id="textInput" type="text">
