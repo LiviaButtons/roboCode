@@ -6,6 +6,34 @@ main {
     display: flex;
     
 }
+
+/*nav--------------------*/
+
+nav > a {
+    background-color: #605959;
+    color:white;
+    margin:10px;
+    border-radius: 4px;
+}
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #605959;
+  background-color: #a39e9e;
+}
+
+
 h1 {
     display: inline-block;
     margin-top: 0;
@@ -43,7 +71,7 @@ h1 {
     color: white;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    height: 200px;
+    height: 220px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -52,20 +80,38 @@ h1 {
     margin: 0;
 }
 
+#numbers > p:nth-of-type(3) {
+    margin-top: 3px;
+}
+
+#numbers > p:last-of-type {
+    margin-bottom: 2px;
+}
+
 #codeText {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-content: space-between;
     position: relative;
     background-color: #F8F2E7;
     border-radius: 10px;
-    height: 200px;
+    height: 220px;
     padding-left: 50px;
     padding-top: 13px;
 }
 
-#codeText > p {
+.codeProposition{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom:10px;
+}
+
+#codeProposition > p {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+
 }
 
 #textInput {
@@ -99,7 +145,7 @@ h2 {
 /*Drag Drop style*/
 #solution {
     width: 200px;
-    height: 50px;
+    height: 40px;
     background-color: #fff;
     border: 1px solid #B54B04;
     margin-left: 10px;

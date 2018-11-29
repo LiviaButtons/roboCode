@@ -10,14 +10,13 @@ main {
 /*nav--------------------*/
 
 nav > a {
-    height: 40px;
     background-color: #605959;
     color:white;
-    padding:10px;
     margin:10px;
     border-radius: 4px;
 }
 nav {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }

@@ -2,29 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Robocode</title>
+    <title>Autobot</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<!--    unity -->
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-<!--    style-->
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="./css/styleNiv5.css">
 <!--     Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!--    unity-->
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-<!--    custom-->
     <script src="./js/drag.js"></script>
-    <script src="./js/ajax.js"></script>
-    
-    <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webApp.json", {onProgress: UnityProgress});
-    </script>
 </head>
 <body>
    
@@ -32,15 +17,21 @@
         <div id="left" class="container">
           <div class="col-md-12">
             <h1>Robocode</h1>
-                <p> Comme tu as pu le constater dans les précédents niveaux, Sparky sait faire tout un tas de choses. Cette fois-ci, si Sparky souhaite son trophée, il devra effectuer plusieurs actions à la suite...
-                Pourras-tu aider Sparky à les accomplir dans l'ordre ?</p>
+                <p>Donne ton prénom à Sparky et il te dira bonjour!
+                 Tu viens ainsi de rajouter ton prénom au paramètre de l'action ".parle" faite par robot Sparky </p>
                 
-
-                <div id="answers" class="dropzone">
-                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Marche(droite)</p>
-                    <p id="correct" class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Marche(droite)</p>
-                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Ramasse()</p>
-                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Saut()</p>
+<!--
+               <div id="btnInput">
+                    <button id="prenom1" class="btn btn-info prenom btn-sample">Floriane</button>
+                    <button id="erase" class="btn btn-info prenom btn-sample">Effacer</button>
+                </div>
+                
+-->
+                 <div id="answers" class="dropzone">
+                    <p id="correct" class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">marche(droite)</p>
+                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">marche(droite)</p>
+                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">ramasse() </p>
+                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">saute()</p>
                 </div>
                
                 <div id="codeDiv">
@@ -49,64 +40,107 @@
                        <p>2</p>
                        <p>3</p>
                        <p>4</p>
-                       <p>5</p>
+<!--                       <p>5</p>-->
+<!--
+                       <p>6</p>
+                       <p>7</p>
+                       <p>8</p>
+                       <p>9</p>
+                       <p>10</p>
+-->
                     </div>
+                    
                     
                     <div id="codeText">
                         <div class="codeProposition">
                             <p>
-                                robot. 
+                                Sparky.  
+                                
                             </p>
-                             <div id="solution" class="dropzone"></div>
+                            <div id="solution" class="dropzone"></div>
+<!--
                             <p> 
-                                ();
+                                ");
                             </p>
-                        </div>    
+-->
+                        </div> 
                         <div class="codeProposition">
                             <p>
-                                robot. 
+                                Sparky.
+                                
                             </p>
-                             <div id="solution" class="dropzone"></div>
+                            <div id="solution" class="dropzone"></div>
+<!--
                             <p> 
-                                ();
+                                ");
                             </p>
+-->
                         </div>
-     
+                        <div class="codeProposition">
+                            <p>
+                                Sparky.  
+                                
+                            </p>
+                            <div id="solution" class="dropzone"></div>
+<!--
+                            <p> 
+                                ");
+                            </p>
+-->
+                        </div>
+                        <div class="codeProposition">
+                            <p>
+                                Sparky.  
+                                
+                            </p>
+                            <div id="solution" class="dropzone"></div>
+<!--
+                            <p> 
+                                ");
+                            </p>
+-->
+                        </div>                        
                     </div>
-                    
                 </div>
                 
                 <div id="valider">
-                    <button class="btn btn-validate" id="validation" disabled>Valider</button>
+                    <button class="btn btn-validate" id="validation" >Valider</button>
                 </div>
                 
                 <h2>Récapitulatif</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aut id quos officiis, harum totam sed optio molestias magnam neque praesentium ab a dolores deserunt incidunt alias explicabo iure culpa nisi beatae. Sit alias, iure nam maiores eveniet possimus mollitia, accusamus cum quam sint deserunt odit nihil neque officiis soluta.</p>
-                
-                <!--Progress bar-->
-                <div class="progress progresJeu" style="position: relative">
-                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80% Complete
+                <p>Tu trouveras dans cette partie un résumé de tes précédentes actions </p>
+           
+<!--              progress bar   -->
+                  <div class="progress progresJeu" style="position: relative">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; color:#605959;">0% Complete
                     </div>
-                </div>
-                
-           </div>
+                  </div>
+             
+             </div>
         </div>
         
         <div id="right" class="container">
            <!--Animation-->
-           <div class="webgl-content" style="position: relative">
-              <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
-              <div class="footer">
-                <div class="webgl-logo"></div>
-                <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                <div class="title">animation2D</div>
+           <div id="bulle" class=" bulle none">
+               <p></p>
+           </div>
+           <div id="robot"></div>
+           <!--Progress bar-->
+<!--
+            <div class="progress progresJeu">
+              <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% Complete
               </div>
             </div>
-            
+-->
         </div>
         
     </main>
     
+   <nav>
+        <a id="prec" class="btn btn-sample" href="./level4.php" >Niveau précédent</a>
+        <a id="next" class="invisible" href="./level2.php">Niveau suivant</a>
+   </nav>
+<!--
     <footer>
     
         <p>
@@ -114,6 +148,34 @@
         </p>
 
     </footer>
-
+-->
+    
+    <script>
+//        let textarea = textInput;
+//        textarea.value = "";
+//        prenom1.addEventListener('click', function(){
+//            let prenom = prenom1.innerHTML;
+//            textarea.value = prenom;
+//        });
+        
+        let bulletext = document.querySelector('#bulle');
+        console.log(bulletext);
+        
+        valider.addEventListener('click', function(e){
+            
+            bulletext.children[0].textContent = "";
+            console.log(textInput.value);
+            let insertion = textInput.value
+              if(insertion !=""){
+                bulletext.classList.remove('none');  
+                console.log(insertion);
+                next.classList.remove('not-active');
+                insertion = "Hello " + insertion + "!";
+                let montext = document.createTextNode(insertion);
+                bulletext.children[0].appendChild(montext);
+              }
+                       
+        });
+    </script>
 </body>
 </html>

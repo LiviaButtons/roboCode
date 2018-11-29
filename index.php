@@ -88,7 +88,7 @@
     
    <nav>
         <a id="prec" class="invisible" href="https://chrome.google.com/webstore/category/extensions?hl=en" disabled>Niveau précédent</a>
-        <a id="next" class="not-active" href="./level2.php">Niveau suivant</a>
+        <a id="next" class="not-active btn btn-sample" href="./level2.php">Niveau suivant</a>
    </nav>
 <!--
     <footer>
