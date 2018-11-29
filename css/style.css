@@ -88,6 +88,12 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 0;
+}
+
+#progresJeu {
+    position: absolute;
+    z-index: 9999;
 }
 
 /*Drag Drop style*/

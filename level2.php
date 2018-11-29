@@ -68,6 +68,11 @@
                 
                 <h2>Récapitulatif</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aut id quos officiis, harum totam sed optio molestias magnam neque praesentium ab a dolores deserunt incidunt alias explicabo iure culpa nisi beatae. Sit alias, iure nam maiores eveniet possimus mollitia, accusamus cum quam sint deserunt odit nihil neque officiis soluta.</p>
+                <div class="progress progresJeu" style="position: relative">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">20% Complete
+                    </div>
+                </div>
+                
            </div>
         </div>
         
@@ -81,14 +86,8 @@
                 <div class="title">animation2D</div>
               </div>
             </div>
-           
-           
-           
+            
            <!--Progress bar-->
-            <div class="progress progresJeu">
-              <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">20% Complete
-              </div>
-            </div>
         </div>
         
     </main>
