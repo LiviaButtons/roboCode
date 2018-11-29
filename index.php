@@ -40,6 +40,7 @@
                        <p>10</p>
                     </div>
                     
+                    
                     <div id="codeText">
                         <p>
                             Robot.parle ("Hello  
@@ -58,7 +59,14 @@
                 
                 <h2>Récapitulatif</h2>
                 <p>Tu trouveras dans cette partie un résumé de tes précédentes actions </p>
-           </div>
+           
+<!--              progress bar   -->
+                  <div class="progress progresJeu" style="position: relative">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% Complete
+                    </div>
+                  </div>
+             
+             </div>
         </div>
         
         <div id="right" class="container">
@@ -68,17 +76,19 @@
            </div>
            <div id="robot"></div>
            <!--Progress bar-->
+<!--
             <div class="progress progresJeu">
               <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% Complete
               </div>
             </div>
+-->
         </div>
         
     </main>
     
    <nav>
         <a id="prec" class="invisible" href="https://chrome.google.com/webstore/category/extensions?hl=en" disabled>Niveau précédent</a>
-        <a id="next" class="not-active" href="https://chrome.google.com/webstore/category/extensions?hl=en">Niveau suivant</a>
+        <a id="next" class="not-active" href="./level2.php">Niveau suivant</a>
    </nav>
 <!--
     <footer>
