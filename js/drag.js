@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    var dragged;
+    
+    validation.disabled = true;
+//    var dragged;
 
     /* events fired on the draggable target */
     document.addEventListener ("drag", function (event) {
@@ -64,15 +66,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     var noSpan = document.createElement('span');
                     noSpan.classList.add("fas");
                     noSpan.classList.add("fa-times");
-                    solution.appendChild(noSpan);                        
+                    solution.appendChild(noSpan);  
+                    
+                    // disable validation button
+                    validation.disabled = true
                 }
             } else {
                 // if target wasn't the solution div, that means it's empty
                 // thus, make it a dropzone again
                 solution.classList.add("dropzone");
+                
+                // disable validation button
+                validation.disabled = true;
 
                 // remove the wrong fontawesome (which is the third child of solution)
-                console.log (solution.childNodes);
                 solution.removeChild(solution.childNodes[0]);
             };
         };    

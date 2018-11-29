@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         }
 
-        xhr.open ("POST", "./SaveActions.php");
+        xhr.open ("POST", "./php/SaveActions.php");
        
         let fd = new FormData();
         fd.append('action', correct.innerHTML);

@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Robocode</title>
-    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+<!--    unity -->
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+<!--    style-->
+    <link rel="stylesheet" href="./css/style.css">
+    
 <!--     Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="./drag.js"></script>
-    <script src="ajax.js"></script>
+<!--    unity-->
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+<!--    custom-->
+    <script src="./js/drag.js"></script>
+    <script src="./js/ajax.js"></script>
     
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webApp.json", {onProgress: UnityProgress});
+    </script>
 </head>
 <body>
    
@@ -61,6 +73,17 @@
         
         <div id="right" class="container">
            <!--Animation-->
+           <div class="webgl-content" style="position: relative">
+              <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
+              <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                <div class="title">animation2D</div>
+              </div>
+            </div>
+           
+           
+           
            <!--Progress bar-->
             <div class="progress progresJeu">
               <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">20% Complete
