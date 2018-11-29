@@ -1,0 +1,265 @@
+* {
+    color: #605959;
+}
+
+main {
+    display: flex;
+    
+}
+
+/*nav--------------------*/
+
+nav > a {
+    height: 40px;
+    background-color: #605959;
+    color:white;
+    padding:10px;
+    margin:10px;
+    border-radius: 4px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #605959;
+  background-color: #a39e9e;
+}
+
+
+/*fin nav-----------------*/
+h1 {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#left {
+    height: 80vh;
+    box-sizing: border-box;
+    background-color: #ffb778;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.col-md-12 > p {
+    margin-bottom: 40px;
+}
+
+
+#btnInput {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#codeDiv {
+   
+}
+
+#numbers {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    position: absolute;
+    z-index: 9999;
+    background-color: #C2BCBC;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#numbers > p {
+    margin: 0;
+}
+
+#codeText {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    background-color: #F8F2E7;
+    border-radius: 10px;
+    height: 300px;
+    padding-left: 50px;
+    padding-top: 13px;
+}
+
+#textInput {
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 8px;
+/*    margin: 5px;*/
+}
+
+#valider {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#right {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(./assets/lvl2.png);
+    background-size: cover;
+    background-position: center;
+/*    background-color: aqua;*/
+}
+
+#robot{
+    position: absolute;
+    bottom: 100px;
+    right: 41%;
+    height:150px;
+    width: 150px;
+/*    background-color: red;*/
+    background-image: url(assets/robot_bat_vert.svg);
+}
+
+.bulle{
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 220px;
+    right: 23%;
+    height:330px;
+    min-width: 150px;
+/*    background-color: transparent;*/
+    background-image: url(assets/bulle71.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+/*    border-radius:50%;*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bulle p{
+    color: black;
+    padding: 10px;
+}
+
+.none{
+    display: none;
+}
+
+/*Boutons drag drop*/
+.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #F46406; 
+  border-color: #F46406; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #B54B04; 
+  border-color: #F46406; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #F46406; 
+  border-color: #F46406; 
+} 
+ 
+.btn-sample .badge { 
+  color: #F46406; 
+  background-color: #FFFFFF; 
+}
+
+/*Bouton validation*/
+
+.btn-validate { 
+  color: #FFFFFF; 
+  background-color: #53B565; 
+  border-color: #53B565; 
+} 
+ 
+.btn-validate:hover, 
+.btn-validate:focus, 
+.btn-validate:active, 
+.btn-validate.active, 
+.open .dropdown-toggle.btn-validate { 
+  color: #FFFFFF; 
+  background-color: #3D874A; 
+  border-color: #53B565; 
+} 
+ 
+.btn-validate:active, 
+.btn-validate.active, 
+.open .dropdown-toggle.btn-validate { 
+  background-image: none; 
+} 
+ 
+.btn-validate.disabled, 
+.btn-validate[disabled], 
+fieldset[disabled] .btn-validate, 
+.btn-validate.disabled:hover, 
+.btn-validate[disabled]:hover, 
+fieldset[disabled] .btn-validate:hover, 
+.btn-validate.disabled:focus, 
+.btn-validate[disabled]:focus, 
+fieldset[disabled] .btn-validate:focus, 
+.btn-validate.disabled:active, 
+.btn-validate[disabled]:active, 
+fieldset[disabled] .btn-validate:active, 
+.btn-validate.disabled.active, 
+.btn-validate[disabled].active, 
+fieldset[disabled] .btn-validate.active { 
+  background-color: #53B565; 
+  border-color: #53B565; 
+} 
+ 
+.btn-validate .badge { 
+  color: #53B565; 
+  background-color: #FFFFFF; 
+}
