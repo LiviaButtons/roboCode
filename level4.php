@@ -32,13 +32,13 @@
         <div id="left" class="container">
           <div class="col-md-12">
             <h1>Robocode</h1>
-                <p>Maintenant que Sparky a réussi à marcher, il doit faire attention aux obstacles sur son chemin. On a déjà vu que pour faire bouger Sparky, on peut lui donner des commandes en ajoutant un point puis la commande à faire. Comment pourras-tu faire sauter Sparky ?</p>
+                <p></p>
                 
 
                 <div id="answers" class="dropzone">
-                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Assis</p>
-                    <p id="correct" class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Saut</p>
-                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Vol</p>
+                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Boit</p>
+                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Mange</p>
+                    <p id="correct" class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Recharge</p>
                 </div>
                
                 <div id="codeDiv">
@@ -51,15 +51,21 @@
                     </div>
                     
                     <div id="codeText">
-                        <p class="bigtext">
-                            robot. 
-                        </p>
                         <div>
-                            <div id="solution" class="dropzone"></div>
-                            <p class="bigtext"> 
-                                ();
+                            <p class="bigtext">
+                                TANT QUE (
                             </p>
+                             <div id="solution" class="dropzone"></div>
+                            <p class="bigtext">){</p>
                         </div>
+                        <div>
+                            <p class="bigtext">robot.recharge();</p>
+                        </div>
+                        
+                        <div>
+                             <p class="bigtext">};</p>
+                        </div>
+                        
                     </div>
                 </div>
                 
@@ -72,7 +78,7 @@
                 
                 <!--Progress bar-->
                 <div class="progress progresJeu" style="position: relative">
-                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60% Complete
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80% Complete
                     </div>
                 </div>
                 
@@ -81,14 +87,14 @@
         
         <div id="right" class="container">
            <!--Animation-->
-           <div class="webgl-content" style="position: relative">
+       <!--    <div class="webgl-content" style="position: relative">
               <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
               <div class="footer">
                 <div class="webgl-logo"></div>
                 <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
                 <div class="title">animation2D</div>
               </div>
-            </div>
+            </div>-->
             
         </div>
         

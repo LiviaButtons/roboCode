@@ -51,14 +51,14 @@
                     </div>
                     
                     <div id="codeText">
-                        <p>
+                        <p class="bigtext">
                             robot.marche ("
                             
                         </p>
-                         <div id="solution" class="dropzone"></div>
-                        <p> 
-                            ");
-                        </p>
+                        <div>
+                            <div id="solution" class="dropzone"></div>
+                            <p class="bigtext">");</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -82,22 +82,19 @@
            <!--Animation-->
            <div class="webgl-content" style="position: relative">
               <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
-              <div class="footer">
-                <div class="webgl-logo"></div>
-                <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                <div class="title">animation2D</div>
-              </div>
             </div>
             
         </div>
+        
         
     </main>
     
     <footer>
     
-        <p>
-            
-        </p>
+        <nav class="col-md-12">
+            <a id="prec" href="index.php" class="btn btn-sample">Niveau précédent</a>
+            <a id="next" class="not-active btn btn-sample" href="level3.php">Niveau suivant</a>
+        </nav>
 
     </footer>
 
