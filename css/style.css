@@ -61,11 +61,22 @@ h1 {
     height: 200px;
     padding-left: 50px;
     padding-top: 13px;
+    flex-direction: column;
 }
 
-#codeText > p {
+#codeText .bigtext {
     font-size: 20px;
     margin-top: 10px;
+/*    line-height: 1.5;*/
+}
+
+#codeText > div:first-of-type {
+    display: flex;
+    flex-direction: row;
+}
+
+#codeText > div:nth-of-type(2) > p {
+    margin-left: 50px;
 }
 
 #textInput {
@@ -85,9 +96,6 @@ h2 {
 }
 
 #right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     padding: 0;
 }
 
@@ -105,6 +113,7 @@ h2 {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
+    clear: both;
 }
 
 .script {
@@ -233,4 +242,30 @@ fieldset[disabled] .btn-validate.active {
 .btn-validate .badge { 
   color: #53B565; 
   background-color: #FFFFFF; 
+}
+
+/*Footer*/
+
+nav > a {
+    background-color: #605959;
+    color:white;
+    margin:10px;
+    border-radius: 4px;
+}
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #605959;
+  background-color: #a39e9e;
 }

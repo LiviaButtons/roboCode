@@ -51,14 +51,14 @@
                     </div>
                     
                     <div id="codeText">
-                        <p>
-                            robot.marche ("
+                        <p class="bigtext">
+                            Sparky.marche ("
                             
                         </p>
-                         <div id="solution" class="dropzone"></div>
-                        <p> 
-                            ");
-                        </p>
+                        <div>
+                            <div id="solution" class="dropzone"></div>
+                            <p class="bigtext">");</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -71,7 +71,7 @@
                   
                 <!--Progress bar-->
                 <div class="progress progresJeu" style="position: relative">
-                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40% Complete
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% Complete
                     </div>
                 </div>
                 
@@ -82,22 +82,19 @@
            <!--Animation-->
            <div class="webgl-content" style="position: relative">
               <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
-              <div class="footer">
-                <div class="webgl-logo"></div>
-                <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                <div class="title">animation2D</div>
-              </div>
             </div>
             
         </div>
+        
         
     </main>
     
     <footer>
     
-        <p>
-            
-        </p>
+        <nav class="col-md-12">
+            <a id="prec" href="index.php" class="btn btn-sample">Niveau précédent</a>
+            <a id="next" class="not-active btn btn-sample" href="level3.php">Niveau suivant</a>
+        </nav>
 
     </footer>
 
