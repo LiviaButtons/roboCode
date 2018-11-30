@@ -137,20 +137,22 @@ h1 {
   margin-top: 15px;
 }
 
-h2 {
-  font-size: 20px;
-}
 
 #right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0;
+  background-color: #ffb778;
+  position: relative;
 }
 
-#progresJeu {
-  position: absolute;
-  z-index: 9999;
+#right img {
+    width: 720px;
+}
+
+.progress {
+    margin-top: 20px;
 }
 
 /*Drag Drop style ici changement*/
@@ -188,6 +190,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .fa-check {
@@ -293,33 +296,28 @@ fieldset[disabled] .btn-validate.active {
   background-color: #FFFFFF; 
 }
 
-
-/*---footer*/
-
+/*Footer*/
 footer {
     background-color: #38302d;
     height: 10vh;
 }
 
-/*nav--------------------*/
-
 nav > a {
-  height: 34px;
-  background-color: #605959;
-  color:white;
-/*  padding:10px;*/
-  margin:10px;
-  border-radius: 4px;
+    background-color: #605959;
+    color:white;
+    margin:10px;
+    border-radius: 4px;
 }
+
 nav {
-  padding-top: 15px;
-  padding-left: 15px;
-  display: flex;
-  justify-content: space-between;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .invisible{
-  visibility:hidden;
+    visibility:hidden;
 }
 
 .not-active {
@@ -329,4 +327,3 @@ nav {
   color: #605959;
   background-color: #a39e9e;
 }
-/*fin nav-----------------*/

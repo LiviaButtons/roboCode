@@ -86,9 +86,15 @@ h1 > span {
 #codeText .bigtext {
     font-size: 20px;
     margin-top: 10px;
+    display: inline-block;
 }
 
 #codeText > div:first-of-type {
+    display: flex;
+    flex-direction: row;
+}
+
+#codeText > div > div {
     display: flex;
     flex-direction: row;
 }
@@ -98,29 +104,20 @@ h1 > span {
 }
 
 #textInput {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #B54B04;
+    font-size: 20px;
     height: 30px;
     width: 100px;
     border-radius: 5px;
-    margin-top: 7px;
+    margin-top: 3px;
     margin-right: 5px;
     margin-left: 5px;
-}
-
-#codeText1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: relative;
-    background-color: #F8F2E7;
-    border-radius: 10px;
-    height: 200px;
-    padding-left: 50px;
-    padding-top: 13px;
-}
-
-#codeText1 .bigtext {
-    font-size: 20px;
-    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #B54B04;
 }
 
 #valider {
@@ -142,35 +139,13 @@ h2 {
     position: relative;
 }
 
-/*#right {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-image: url(../assets/lvl2.png);
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 100px;
-    background-color: aqua;
-}*/
-
-/*#robot{
-    position: absolute;
-    bottom: 100px;
-    right: 41%;
-    height:150px;
-    width: 150px;
-    background-color: red;
-    background-image: url(../assets/robot_bat_vert.svg);
-}*/
-
 .bulle{
     color: black;
     font-size: 1.2em;
     font-weight: bold;
     position: absolute;
-    bottom: 220px;
-    right: 23%;
+    bottom: 120px;
+    right: 50%;
     height:330px;
     min-width: 150px;
 /*    background-color: transparent;*/
@@ -189,7 +164,7 @@ h2 {
     padding: 10px;
 }
 
-#right > img {
+#right  img {
     width: 720px;
 }
 
@@ -210,7 +185,6 @@ h2 {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
-    clear: both;
 }
 
 .script {
