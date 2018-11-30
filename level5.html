@@ -2,27 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Autobot</title>
+  <title>Robocode</title>
+   <!-- Normalize -->
   <link rel="stylesheet" href="./css/normalize.css">
+   <!-- Bootstrap style -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- custom style -->
   <link rel="stylesheet" href="./css/styleNiv5.css">
-
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   <!--     Latest compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- custom JS -->
   <script src="./js/dragNiv5.js"></script>
 </head>
 <body>
 
   <main>
-    <div id="left" class="container">
-      <div class="col-md-12">
-        <h1>Robocode</h1>
-        <p>Comme tu as pu le voir, Sparky peut faire tout un tas de chose. Si Sparky veut obtenir son trophée, il devra cette fois accomplir plusieurs actions à la suite. Peut-tu l'aider à accomplir ses actions dans l'ordre? </p>
+        <div id="left" class="container">
+           <div class="col-md-12">
+           <div id="logoDiv">
+              <img id="logo" src="./assets/logo.png" alt="">
+              <h1>Robo<span>code</span></h1>
+           </div>
+            <p>Comme tu as pu le voir, Sparky peut faire tout un tas de chose. Si Sparky veut obtenir son trophée, il devra cette fois accomplir plusieurs actions à la suite. Peut-tu l'aider à accomplir ses actions dans l'ordre? </p>
 
-<!--
+    <!--
                <div id="btnInput">
                     <button id="prenom1" class="btn btn-info prenom btn-sample">Floriane</button>
                     <button id="erase" class="btn btn-info prenom btn-sample">Effacer</button>
@@ -55,52 +64,52 @@
 
                    <div id="codeText">
                     <div class="codeProposition">
-                      <p>
+                      <p class="bigtext">
                         Sparky.  
 
                       </p>
                       <div id="solution" class="drop_solution dropzone"></div>
-<!--
-                            <p> 
-                                ");
+
+                            <p class="bigtext"> 
+                                ;
                             </p>
-                          -->
+                          
                         </div> 
                         <div class="codeProposition">
-                          <p>
+                          <p class="bigtext">
                             Sparky.
 
                           </p>
                           <div id="solution" class="drop_solution dropzone"></div>
-<!--
-                            <p> 
-                                ");
+
+                            <p class="bigtext"> 
+                                ;
                             </p>
-                          -->
+                          
                         </div>
                         <div class="codeProposition">
-                          <p>
+                          <p class="bigtext">
+                            Sparky.  
+
+                          </p >
+                          <div id="solution" class="drop_solution dropzone"></div>
+
+                            <p class="bigtext"> 
+                                ;
+                            </p>
+                          
+                        </div>
+                        <div class="codeProposition">
+                          <p class="bigtext">
                             Sparky.  
 
                           </p>
                           <div id="solution" class="drop_solution dropzone"></div>
-<!--
-                            <p> 
-                                ");
-                            </p>
-                          -->
-                        </div>
-                        <div class="codeProposition">
-                          <p>
-                            Sparky.  
 
-                          </p>
-                          <div id="solution" class="drop_solution dropzone"></div>
-<!--
-                            <p> 
-                                ");
+                            <p class="bigtext"> 
+                                ;
                             </p>
-                          -->
+                          
                         </div>                        
                       </div>
                     </div>
@@ -127,30 +136,18 @@
                    <p></p>
                  </div>
                  <div id="robot"></div>
-                 <!--Progress bar-->
-<!--
-            <div class="progress progresJeu">
-              <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% Complete
-              </div>
-            </div>
-          -->
         </div>
         
       </main>
 
-      <nav>
-        <a id="prec" class="btn btn-sample" href="./level4.php" >Niveau précédent</a>
-        <a id="next" class="invisible" href="./level2.php">Niveau suivant</a>
-      </nav>
-<!--
-    <footer>
-    
-        <p>
-            
-        </p>
 
+    <footer>
+        <nav>
+            <a id="prec" class="btn btn-sample" href="./level4.html">Niveau précédent</a>
+            <a id="next" class="invisible" href="./level2.php">Niveau suivant</a>
+        </nav>
     </footer>
-  -->
+  
 
 <!--
 

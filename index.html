@@ -20,7 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- custom JS -->
     <script src="./js/drag.js"></script>
-    <script src="./js/validation.js"></script>    
+    <script src="./js/validationLevel1.js"></script>    
 </head>
 <body>
    
@@ -33,7 +33,7 @@
                </div>
                 <p>Donne ton prénom à Sparky et il te dira bonjour!
                  Tu viens ainsi de rajouter ton prénom au paramètre de l'action ".parle" faite par robot Sparky </p>
-               
+
                 <div id="codeDiv">
                     <div id="numbers">
                        <p>1</p>
@@ -45,8 +45,9 @@
                     
                     
                     <div id="codeText1">
+
                         <p class="bigtext">
-                            Sparky.parle ("Hello  
+                            Sparky.parle ("Bonjour   
                             
                         </p>
                         <input id="textInput" type="text">
@@ -57,10 +58,10 @@
                 </div>
                 
                 <div id="valider">
-                    <button id="indexValidation" class="btn btn-validate">Valider</button>
+                    <button id="validation" class="btn btn-validate" disabled>Valider</button>
                 </div>
            
-<!--              progress bar   -->
+                <!-- progress bar -->
                 <div class="progress progresJeu" style="position: relative">
                     <div id="progressBar" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; color:#605959;">0% complete
                     </div>
@@ -85,25 +86,5 @@
             <a id="next" class="not-active btn btn-sample" href="./level2.html">Niveau suivant</a>
         </nav>
     </footer>
-    
-    <script>
-        let bulletext = document.querySelector('#bulle');
-        console.log(bulletext);
-        
-        valider.addEventListener('click', function(e){
-            
-            bulletext.children[0].textContent = "";
-            console.log(textInput.value);
-            let insertion = textInput.value
-              if(insertion !=""){
-                bulletext.classList.remove('none');  
-                console.log(insertion);
-                next.classList.remove('not-active');
-                insertion = "Hello " + insertion + "!";
-                let montext = document.createTextNode(insertion);
-                bulletext.children[0].appendChild(montext);
-              } 
-        });
-    </script>
 </body>
 </html>

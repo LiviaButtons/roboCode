@@ -4,42 +4,48 @@
 
 main {
   display: flex;
+  height:90vh;
   
 }
 
-/*nav--------------------*/
 
-nav > a {
-  height: 40px;
-  background-color: #605959;
-  color:white;
-  padding:10px;
-  margin:10px;
-  border-radius: 4px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
+/*----ajout style niv1 (logo ajouté)*/
+@font-face {
+    font-family: RobotCrush;
+    src: url(../assets/Robot_Crush.otf);
 }
 
-.invisible{
-  visibility:hidden;
+#logo {
+    width: 100px;
+} 
+
+#logoDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.not-active {
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  color: #605959;
-  background-color: #a39e9e;
+h1 {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 20px;
+    font-family: RobotCrush;
+    color: #38302d;
 }
 
-
+h1 > span {
+    color: #f46406;
+}
+/*----fin ajout style niv1 (logo ajouté)*/
+/*
+/titre vavant ajout logo
 h1 {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 20px;
 }
+*/
 
 #left {
   background-color: #ffb778;
@@ -73,7 +79,7 @@ h1 {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   height: 220px;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
@@ -81,12 +87,9 @@ h1 {
   margin: 0;
 }
 
-#numbers > p:nth-of-type(3) {
-  margin-top: 3px;
-}
 
 #numbers > p:last-of-type {
-  margin-bottom: 2px;
+  margin-bottom: 7px;
 }
 
 #codeText {
@@ -114,6 +117,13 @@ h1 {
   padding-top: 20px;
 
 }
+/* ici test*/
+#codeText .bigtext {
+    font-size: 20px;
+/*    padding-top: 10px;*/
+/*    line-height: 1.5;*/
+}
+/*ici fin test*/
 
 #textInput {
   height: 20px;
@@ -282,3 +292,41 @@ fieldset[disabled] .btn-validate.active {
   color: #53B565; 
   background-color: #FFFFFF; 
 }
+
+
+/*---footer*/
+
+footer {
+    background-color: #38302d;
+    height: 10vh;
+}
+
+/*nav--------------------*/
+
+nav > a {
+  height: 34px;
+  background-color: #605959;
+  color:white;
+/*  padding:10px;*/
+  margin:10px;
+  border-radius: 4px;
+}
+nav {
+  padding-top: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invisible{
+  visibility:hidden;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #605959;
+  background-color: #a39e9e;
+}
+/*fin nav-----------------*/
