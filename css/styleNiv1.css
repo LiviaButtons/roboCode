@@ -10,6 +10,7 @@
 
 main {
     display: flex;
+    height: 90vh;
     
 }
 
@@ -19,14 +20,6 @@ main {
 
 /*nav--------------------*/
 
-nav > a {
-    height: 40px;
-    background-color: #605959;
-    color:white;
-    padding:10px;
-    margin:10px;
-    border-radius: 4px;
-}
 nav {
     display: flex;
     justify-content: space-between;
@@ -66,11 +59,11 @@ h1 > span {
 }
 
 #left {
-    height: 80vh;
+/*    height: 80vh;*/
     box-sizing: border-box;
     background-color: #ffb778;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .col-md-12 > p {
@@ -87,8 +80,21 @@ h1 > span {
     margin-right: auto;
 }
 
-#codeDiv {
-   
+#codeText {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    background-color: #F8F2E7;
+    border-radius: 10px;
+    height: 200px;
+    padding-left: 50px;
+    padding-top: 13px;
+    flex-direction: column;
+}
+
+#codeText .bigtext {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 #numbers {
@@ -103,24 +109,13 @@ h1 > span {
     color: white;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    height: 300px;
+    height: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #numbers > p {
     margin: 0;
-}
-
-#codeText {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    background-color: #F8F2E7;
-    border-radius: 10px;
-    height: 300px;
-    padding-left: 50px;
-    padding-top: 13px;
 }
 
 #textInput {
@@ -150,7 +145,7 @@ h2 {
 }
 
 #right {
-    height: 80vh;
+/*    height: 80vh;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -158,6 +153,7 @@ h2 {
     background-image: url(../assets/lvl2.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 100px;
 /*    background-color: aqua;*/
 }
 
@@ -293,4 +289,34 @@ fieldset[disabled] .btn-validate.active {
 .btn-validate .badge { 
   color: #53B565; 
   background-color: #FFFFFF; 
+}
+
+footer {
+    background-color: #38302d;
+    height: 10vh;
+}
+
+/*nav--------------------*/
+nav > a {
+    background-color: #605959;
+    color:white;
+    margin:10px;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #605959;
+  background-color: #a39e9e;
 }
