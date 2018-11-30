@@ -148,9 +148,9 @@ h2 {
     font-size: 1.2em;
     font-weight: bold;
     position: absolute;
-    bottom: 220px;
-    right: 23%;
-    height:330px;
+    bottom: 5px;
+    right: 45%;
+    height: 330px;
     min-width: 150px;
 /*    background-color: transparent;*/
     background-image: url(../assets/bulle71.png);
