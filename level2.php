@@ -60,9 +60,6 @@
                 <div id="valider">
                     <button class="btn btn-validate" id="validation" disabled>Valider</button>
                 </div>
-                
-                <h2>Récapitulatif</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aut id quos officiis, harum totam sed optio molestias magnam neque praesentium ab a dolores deserunt incidunt alias explicabo iure culpa nisi beatae. Sit alias, iure nam maiores eveniet possimus mollitia, accusamus cum quam sint deserunt odit nihil neque officiis soluta.</p>
                   
                 <!--Progress bar-->
                 <div class="progress progresJeu" style="position: relative">

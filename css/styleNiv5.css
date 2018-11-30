@@ -1,28 +1,29 @@
 * {
-    color: #605959;
+  color: #605959;
 }
 
 main {
-    display: flex;
-    
+  display: flex;
+  
 }
 
 /*nav--------------------*/
 
 nav > a {
-    background-color: #605959;
-    color:white;
-    margin:10px;
-    border-radius: 4px;
+  height: 40px;
+  background-color: #605959;
+  color:white;
+  padding:10px;
+  margin:10px;
+  border-radius: 4px;
 }
 nav {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .invisible{
-    visibility:hidden;
+  visibility:hidden;
 }
 
 .not-active {
@@ -35,155 +36,156 @@ nav {
 
 
 h1 {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 20px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 #left {
-    background-color: #ffb778;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  background-color: #ffb778;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #btnInput {
-    width: 160px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #codeDiv {
-   
+ 
 }
 
 #numbers {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    width: 30px;
-    position: absolute;
-    z-index: 9999;
-    background-color: #C2BCBC;
-    color: white;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    height: 220px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  position: absolute;
+  z-index: 9999;
+  background-color: #C2BCBC;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #numbers > p {
-    margin: 0;
+  margin: 0;
 }
 
 #numbers > p:nth-of-type(3) {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 #numbers > p:last-of-type {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 #codeText {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    position: relative;
-    background-color: #F8F2E7;
-    border-radius: 10px;
-    height: 220px;
-    padding-left: 50px;
-    padding-top: 13px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  position: relative;
+  background-color: #F8F2E7;
+  border-radius: 10px;
+  height: 220px;
+  padding-left: 50px;
+  padding-top: 13px;
 }
 
 .codeProposition{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom:10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom:10px;
 }
 
 #codeProposition > p {
-    font-size: 20px;
-    margin-top: 20px;
-    padding-top: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
 
 }
 
 #textInput {
-    height: 20px;
-    width: 100px;
-    border-radius: 5px;
+  height: 20px;
+  width: 100px;
+  border-radius: 5px;
 }
 
 #valider {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
 }
 
 h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
 
 #progresJeu {
-    position: absolute;
-    z-index: 9999;
+  position: absolute;
+  z-index: 9999;
 }
 
-/*Drag Drop style*/
-#solution {
-    width: 200px;
-    height: 40px;
-    background-color: #fff;
-    border: 1px solid #B54B04;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
+/*Drag Drop style ici changement*/
+.drop_solution {
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #B54B04;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 .script {
-    padding: 10px;
-    width: 400px;
-    height: 50px;
-    background-color: #e3e3e3;
-    border: 2px solid #dcdcdc;
+  padding: 10px;
+  width: 400px;
+  height: 50px;
+  background-color: #e3e3e3;
+  border: 2px solid #dcdcdc;
 }
 
 .dragEle {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 3px;
-    background-color: #ffb778;
-    border: 1px solid transparent;
-    border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 3px;
+  background-color: #ffb778;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
-#answers {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#propositions {
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-check {
-    color: #53b565;
+  color: #53b565;
 }
 
 .fa-times {
-    color: #f46406;
+  color: #f46406;
 }
 
 /*Boutons drag drop*/
@@ -192,7 +194,7 @@ h2 {
   background-color: #F46406; 
   border-color: #F46406; 
 } 
- 
+
 .btn-sample:hover, 
 .btn-sample:focus, 
 .btn-sample:active, 
@@ -202,13 +204,13 @@ h2 {
   background-color: #B54B04; 
   border-color: #F46406; 
 } 
- 
+
 .btn-sample:active, 
 .btn-sample.active, 
 .open .dropdown-toggle.btn-sample { 
   background-image: none; 
 } 
- 
+
 .btn-sample.disabled, 
 .btn-sample[disabled], 
 fieldset[disabled] .btn-sample, 
@@ -227,7 +229,7 @@ fieldset[disabled] .btn-sample.active {
   background-color: #F46406; 
   border-color: #F46406; 
 } 
- 
+
 .btn-sample .badge { 
   color: #F46406; 
   background-color: #FFFFFF; 
@@ -240,7 +242,7 @@ fieldset[disabled] .btn-sample.active {
   background-color: #53B565; 
   border-color: #53B565; 
 } 
- 
+
 .btn-validate:hover, 
 .btn-validate:focus, 
 .btn-validate:active, 
@@ -250,13 +252,13 @@ fieldset[disabled] .btn-sample.active {
   background-color: #3D874A; 
   border-color: #53B565; 
 } 
- 
+
 .btn-validate:active, 
 .btn-validate.active, 
 .open .dropdown-toggle.btn-validate { 
   background-image: none; 
 } 
- 
+
 .btn-validate.disabled, 
 .btn-validate[disabled], 
 fieldset[disabled] .btn-validate, 
@@ -275,7 +277,7 @@ fieldset[disabled] .btn-validate.active {
   background-color: #53B565; 
   border-color: #53B565; 
 } 
- 
+
 .btn-validate .badge { 
   color: #53B565; 
   background-color: #FFFFFF; 
