@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	/* what happens when you drop a draggable element */
 	document.addEventListener("drop", function (event) {
-	    // event.preventDefault();
+        // prevent default action
+	    event.preventDefault();
 
 		// move dragged element to the selected drop target
 		if (event.target.classList.contains("dropzone")) {
