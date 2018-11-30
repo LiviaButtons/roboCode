@@ -80,10 +80,10 @@
         
         <div id="right" class="container">
            <!--Animation-->
-           <div class="webgl-content" style="position: relative">
-              <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
-            </div>
-            
+<!--           <div class="webgl-content" style="position: relative">-->
+<!--              <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>-->
+<!--            </div>-->
+            <img id="gameImg" src="./assets/gif/robot_walking.png" alt="Sparky marche">
         </div>
         
         
