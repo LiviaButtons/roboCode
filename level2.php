@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Robocode</title>
+    
+    <!-- Normalize -->
     <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Bootstrap style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<!--    unity -->
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-<!--    style-->
+    <!-- custom style -->
     <link rel="stylesheet" href="./css/style.css">
     
-<!--     Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!--    unity-->
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-<!--    custom-->
+    <!-- custom JS -->
     <script src="./js/drag.js"></script>
-    <script src="./js/ajax.js"></script>
-    
-    <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webApp.json", {onProgress: UnityProgress});
-    </script>
+    <script src="./js/validation.js"></script>
 </head>
 <body>
    
@@ -32,7 +27,7 @@
         <div id="left" class="container">
           <div class="col-md-12">
             <h1>Robocode</h1>
-                <p>Sparky ne fait pas que parler, il peut aussi se balader sur sa planète. Fais-le maintenant marcher à droite, en sélectionant le bon paramètre !</p>
+                <p>Sparky ne fait pas que parler, il peut aussi se balader sur sa planète. Il suffit de lancer la commande ".marche", et Sparky commence à se promener. Fais-le maintenant marcher à droite, en sélectionant le bon paramètre !</p>
                 
 
                 <div id="answers" class="dropzone">
@@ -71,7 +66,7 @@
                   
                 <!--Progress bar-->
                 <div class="progress progresJeu" style="position: relative">
-                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% Complete
+                    <div id="progressBar" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% complete
                     </div>
                 </div>
                 
@@ -79,24 +74,16 @@
         </div>
         
         <div id="right" class="container">
-           <!--Animation-->
-           <div class="webgl-content" style="position: relative">
-              <div id="gameContainer" style="width: 720px; height: 600px; position: relative"></div>
-            </div>
-            
+            <!-- Animation -->
+            <img id="gameImg" src="./assets/gif/robot_walking.png" alt="Sparky marche">
         </div>
-        
-        
     </main>
     
     <footer>
-    
         <nav class="col-md-12">
             <a id="prec" href="index.php" class="btn btn-sample">Niveau précédent</a>
             <a id="next" class="not-active btn btn-sample" href="level3.php">Niveau suivant</a>
         </nav>
-
     </footer>
-
 </body>
 </html>
