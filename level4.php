@@ -29,7 +29,7 @@
             <h1>Robocode</h1>
                 <p>Comme tout les robots, Sparky à besoin d'électricité pour fonctionner. Mais attention ! Maintenant qu'on la fait bouger, sa batterie et presque vide !</p>
                 
-                <p>On veut charger la batterie de Sparky jusqu'a-ce-que elle soit pleine. </p>
+                <p>On peut donner a Sparky la commande de "recharger" sa batterie. Mais attention : on veut charger la batterie de Sparky jusqu'a-ce-que elle soit pleine. On va donc lancer une boucle pour qu'il continue à charger tant qu'il n'est pas completement recharger. Quelle condition doit-on mettre dans la boucle ?</p>
                 
 
                 <div id="answers" class="dropzone">
