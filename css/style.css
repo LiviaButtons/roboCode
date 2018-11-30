@@ -4,7 +4,7 @@
 
 main {
     display: flex;
-    
+    height: 90vh;
 }
 
 #logo {
@@ -255,6 +255,10 @@ fieldset[disabled] .btn-validate.active {
 }
 
 /*Footer*/
+footer {
+    background-color: #38302d;
+    height: 10vh;
+}
 
 nav > a {
     background-color: #605959;
@@ -264,9 +268,10 @@ nav > a {
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .invisible{

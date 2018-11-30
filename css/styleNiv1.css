@@ -11,7 +11,6 @@
 main {
     display: flex;
     height: 90vh;
-    
 }
 
 #logo {
@@ -21,9 +20,12 @@ main {
 /*nav--------------------*/
 
 nav {
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 .invisible{
     visibility:hidden;
