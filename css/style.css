@@ -1,3 +1,8 @@
+@font-face {
+    font-family: RobotCrush;
+    src: url(../assets/Robot_Crush.otf);
+}
+
 * {
     color: #605959;
 }
@@ -11,10 +16,18 @@ main {
     width: 100px;
 }
 
+#logoDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 h1 {
     display: inline-block;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: RobotCrush;
     color: #38302d;
 }
 
@@ -73,7 +86,6 @@ h1 > span {
 #codeText .bigtext {
     font-size: 20px;
     margin-top: 10px;
-/*    line-height: 1.5;*/
 }
 
 #codeText > div:first-of-type {
@@ -86,9 +98,29 @@ h1 > span {
 }
 
 #textInput {
-    height: 20px;
+    height: 30px;
     width: 100px;
     border-radius: 5px;
+    margin-top: 7px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#codeText1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    background-color: #F8F2E7;
+    border-radius: 10px;
+    height: 200px;
+    padding-left: 50px;
+    padding-top: 13px;
+}
+
+#codeText1 .bigtext {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 #valider {
@@ -102,12 +134,67 @@ h2 {
 }
 
 #right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
+    background-color: #ffb778;
+    position: relative;
 }
 
-#progresJeu {
+/*#right {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../assets/lvl2.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    background-color: aqua;
+}*/
+
+/*#robot{
     position: absolute;
-    z-index: 9999;
+    bottom: 100px;
+    right: 41%;
+    height:150px;
+    width: 150px;
+    background-color: red;
+    background-image: url(../assets/robot_bat_vert.svg);
+}*/
+
+.bulle{
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 220px;
+    right: 23%;
+    height:330px;
+    min-width: 150px;
+/*    background-color: transparent;*/
+    background-image: url(../assets/bulle71.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+/*    border-radius:50%;*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bulle p{
+    color: black;
+    padding: 10px;
+}
+
+#right > img {
+    width: 720px;
+}
+
+.none{
+    display: none;
 }
 
 .progress {
@@ -145,7 +232,7 @@ h2 {
 }
 
 #answers {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,7 +355,7 @@ nav > a {
 }
 
 nav {
-    margin-top: 15px;
+    padding-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;

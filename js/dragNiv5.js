@@ -140,10 +140,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	}, false);
     
     valider.addEventListener('click', function(e){
+        validation.disabled = true;
   // quelque chose qui se passe quand bouton valider est clicqué
   progressbar.setAttribute("style", "width: 100%;");
   progressbar.setAttribute("aria-valuenow", "100");
-  progressbar.textContent = "100% Complete";
+    progressbar.textContent = "100% Complete";
+    gameImg5.src = "./assets/gif/robot_lvl5.gif";
 
 });
 });

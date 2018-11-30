@@ -20,15 +20,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
             progressBar.style.width = "100%";
         }
        
-        // swap the PNG for gif (launching "animation")
-        gameImg2.src = "./assets/gif/robot_marche.gif";
-        // to adapt for each level!!
-        gameImg3.src = "./assets/gif/robot_saute.gif";
-        gameImg4.src = "./assets/gif/robot_charge.gif";
-        // attention: doing it like this returns error (gameImg2 undefined etc.) on the other pages.
-        // currently a small price to pay
-        gameImg5.src = "./assets/gif/robot_lvl5.gif";
-       
         progressBar.innerHTML = progressBar.style.width + " complete";
+       
+       
+        // swap the PNG for gif (launching "animation")
+        // depending on the page
+        if (window.location.href.indexOf("level2") > -1) {
+            gameImg2.src = "./assets/gif/robot_marche.gif";
+        } else if (window.location.href.indexOf("level3") > -1) {
+            gameImg3.src = "./assets/gif/robot_saute.gif";
+        } else if (window.location.href.indexOf("level4") > -1) {
+            gameImg4.src = "./assets/gif/robot_charge.gif"; 
+        } 
+        // page 5 validated separately
    }) 
 });
