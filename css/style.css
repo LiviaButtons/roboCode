@@ -27,10 +27,6 @@ h1 {
     margin-right: auto;
 }
 
-#codeDiv {
-   
-}
-
 #numbers {
     display: flex;
     justify-content: space-around;
@@ -102,6 +98,10 @@ h2 {
 #progresJeu {
     position: absolute;
     z-index: 9999;
+}
+
+.progress {
+    margin-top: 20px;
 }
 
 /*Drag Drop style*/
