@@ -27,11 +27,13 @@
         <div id="left" class="container">
           <div class="col-md-12">
             <h1>Robocode</h1>
-                <p>Texte explicatif pour faire recharger Sparky.</p>
+                <p>Comme tout les robots, Sparky à besoin d'électricité pour fonctionner. Mais attention ! Maintenant qu'on la fait bouger, sa batterie et presque vide !</p>
+                
+                <p>On veut charger la batterie de Sparky jusqu'a-ce-que elle soit pleine. </p>
                 
 
                 <div id="answers" class="dropzone">
-                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Trump est president</p>
+                    <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Il pleut</p>
                     <p class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Soleil brille</p>
                     <p id="correct" class="dragEle btn btn-sample" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">Batterie pas pleine</p>
                 </div>
@@ -66,9 +68,6 @@
                 <div id="valider">
                     <button class="btn btn-validate" id="validation" disabled>Valider</button>
                 </div>
-                
-                <h2>Récapitulatif</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aut id quos officiis, harum totam sed optio molestias magnam neque praesentium ab a dolores deserunt incidunt alias explicabo iure culpa nisi beatae. Sit alias, iure nam maiores eveniet possimus mollitia, accusamus cum quam sint deserunt odit nihil neque officiis soluta.</p>
                 
                 <!--Progress bar-->
                 <div class="progress progresJeu" style="position: relative">
