@@ -81,7 +81,7 @@
         
         <div id="right" class="container">
             <!-- Animation -->
-            <img id="gameImg" src="./assets/gif/robot_walking.png" alt="Sparky marche">
+            <img id="gameImg4" src="./assets/gif/robot_walking.png" alt="Sparky marche">
         </div>
     </main>
     

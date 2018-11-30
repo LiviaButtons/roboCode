@@ -21,8 +21,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
        
         // swap the PNG for gif (launching "animation")
-        gameImg.src = "./assets/gif/robot_marche.gif";
+        gameImg2.src = "./assets/gif/robot_marche.gif";
         // to adapt for each level!!
+        gameImg3.src = "./assets/gif/robot_saute.gif";
+        gameImg4.src = "./assets/gif/robot_charge.gif";
+        // attention: doing it like this returns error (gameImg2 undefined etc.) on the other pages.
+        // currently a small price to pay
+        gameImg5.src = "./assets/gif/robot_lvl5.gif";
        
         progressBar.innerHTML = progressBar.style.width + " complete";
    }) 
