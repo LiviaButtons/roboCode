@@ -33,13 +33,46 @@ nav {
   color: #605959;
   background-color: #a39e9e;
 }
+/*fin nav-----------------*/
 
 
+/*----ajout style niv1 (logo ajouté)*/
+@font-face {
+    font-family: RobotCrush;
+    src: url(../assets/Robot_Crush.otf);
+}
+
+#logo {
+    width: 100px;
+} 
+
+#logoDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 20px;
+    font-family: RobotCrush;
+    color: #38302d;
+}
+
+h1 > span {
+    color: #f46406;
+}
+/*----fin ajout style niv1 (logo ajouté)*/
+/*
+/titre vavant ajout logo
 h1 {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 20px;
 }
+*/
 
 #left {
   background-color: #ffb778;

@@ -38,13 +38,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	/* what happens when you drop a draggable element */
 	document.addEventListener("drop", function (event) {
-	    // event.preventDefault();
+        // prevent default action
+	    event.preventDefault();
 
 		// move dragged element to the selected drop target
 		if (event.target.classList.contains("dropzone")) {
 			// dragged.parentNode.style.background = "#00e3e3"; //donne la couleur à l'élément que le dragged leave
 
-			//remêt la class "dropzone" au parent quitté si il contient la classe "drop-solution" (il ne contenait qu'un seul élément et doit maintenant être vide: il faut pouvoir dropper une nouvelle réponse)
+			//remet la class "dropzone" au parent quitté si il contient la classe "drop-solution" (il ne contenait qu'un seul élément et doit maintenant être vide: il faut pouvoir dropper une nouvelle réponse)
 			if (dragged.parentNode.classList.contains("drop_solution")) {
 				dragged.parentNode.classList.add("dropzone");
 			}
