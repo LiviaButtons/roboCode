@@ -70,6 +70,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     
                     // disable validation button
                     validation.disabled = true
+                    
+                    // make the fontAwesome cross clickable
+                    noSpan.addEventListener ("click", function (e) {
+                        // retrieve its sibling (AKA the wrong solution)
+                        let wrongEle = noSpan.parentNode.childNodes[0];
+                        
+                        // append the wrong solution to its original place
+                        document.getElementById('answers').appendChild(wrongEle);
+                        
+                        // remove the fontAwesome span
+                        document.getElementById('solution').removeChild(noSpan);
+                        
+                        // make "solution" a dropzone again
+                        document.getElementById('solution').classList.add('dropzone');
+                    })
                 }
             } else {
                 // if target wasn't the solution div, that means it's empty
