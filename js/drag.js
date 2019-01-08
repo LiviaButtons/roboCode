@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     validation.disabled = true;
     var dragged;
     
-    console.log (dragElements);
-    console.log (dragAreas);
+//    console.log (dragElements);
+//    console.log (dragAreas);
     
     for (let i = 0; i < dragElements.length; i++) {
         let current = dragElements[i];

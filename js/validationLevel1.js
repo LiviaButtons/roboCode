@@ -9,24 +9,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
 ////        };
 //    });
     
+    console.log ('test1');
+    
     let bulletext = document.querySelector('#bulle');
-//    console.log(bulletext);
 
     validation.addEventListener('click', function(e){
         // disable the button once it's been pressed
         validation.disabled = true;
         
         bulletext.children[0].textContent = "";
-//        console.log(textInput.value);
         let insertion = textInput.value
-            if(insertion !=""){
-                bulletext.classList.remove('none');  
-//                console.log(insertion);
-                next.classList.remove('not-active');
-                insertion = "Bonjour " + insertion + " !";
-                let montext = document.createTextNode(insertion);
-                bulletext.children[0].appendChild(montext);
-            } 
+        console.log (insertion);
+        
+        if(insertion !=""){
+            bulletext.classList.remove('none');  
+            next.classList.remove('not-active');
+            insertion = "Bonjour " + insertion + " !";
+            let montext = document.createTextNode(insertion);
+            bulletext.children[0].appendChild(montext);
+        } 
         
         // change width of progress bar
         document.getElementById("progressBar").style.width = "20%";
