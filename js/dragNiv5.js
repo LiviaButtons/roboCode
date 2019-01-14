@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	    dragged = event.target;
 	    // make it half transparent
 	    event.target.style.opacity = .5;
-	    console.log(dragged);
+//	    console.log(dragged);
 
 		// si un message était afficher dans la div .propositions (parce que l'utilisateur avait déjà essayer une combinaison de toutes les instruction et donc vidé la div .propositions) -> le remover
 		if (propositions.children[0].id == "trymessage") {
-			console.log("teeeeeest");
-			console.log(propositions.removeChild(trymessage));
+//			console.log("teeeeeest");
+//			console.log(propositions.removeChild(trymessage));
 		}
 	}, false);
 
@@ -55,33 +55,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 			//empêche qu'on drag de nouveaux éléments dans les div "drop-solution" si il y en à déjà un
 			if (event.target.classList.contains("drop_solution")) {
-				console.log(event.target);
+//				console.log(event.target);
 				event.target.classList.remove("dropzone");
-				console.log(event.target);
+//				console.log(event.target);
 			}
 
 			// vérification:
 
 			// sélectionne toutes les réponses (éléments draggable) DEJA droppées dans les div "drop_solution" et les stock dans un tableau
 			let answers = document.querySelectorAll(".drop_solution .dragEle");
-			console.log(answers);
+//			console.log(answers);
 			// console.log(answers[0]);
 
 			// crée un variable qui comptabilise le nombre de réponses déjà droppées (=longueur du tableau)
 			var nbr_answers = answers.length;
-			console.log(nbr_answers);
+//			console.log(nbr_answers);
 
 			// si le nombre de réponses données > 3 (donc == 4 -> toutes les div "drop_solution" sont remplies), vérifier si les réponses sont dans le bon ordre
 			if (nbr_answers > 3) {
 
 				// crée variable boléenne "succes" et l'instancie à true
 				let succes = true;
-				console.log(succes);
+//				console.log(succes);
 
 				//crée un array qui reprend l'ordre alternatif de bonnes réponses (les id sont 0, 1, 2, 3, et cet ordre est correct, mais comme 2solution sont possible (les deux marche(droite) sont intervertible, il faut vérifier la combinaison 2,1,0,3))
 				let valeursAlt = [2,1,0,3];
-				console.log(valeursAlt);
-				console.log(valeursAlt[0]);
+//				console.log(valeursAlt);
+//				console.log(valeursAlt[0]);
 
 
 				// vérifie que les 4 réponses droppées (reprisent dans "answers") sont données dans l'ordre attendu (leurs id doivent, dans l'ordre, correspondre à 0, 1, 2 -> valeurs également prisent par i OU à 2,1,0,3 -> valeurs contenues dans la tableau valeursAlt)
@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 						// si une seule des vakeurs n'est pas à la place attendue, "succes" passe a false
 						succes = false;
 					}
-					console.log(succes);
+//					console.log(succes);
 				}
-				console.log(succes);
+//				console.log(succes);
 
 				// dans le cas où "succes" est resté à "true", le jeu est gagné
 				if (succes) {
@@ -107,12 +107,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 						yesSpan.classList.add("fas");
 						yesSpan.classList.add ("fa-check");
-						console.log(answers[i].parentNode);
+//						console.log(answers[i].parentNode);
 
 						answers[i].parentNode.appendChild(yesSpan);
 
-						console.log(answers[i].parentNode);
-						console.log(yesSpan);
+//						console.log(answers[i].parentNode);
+//						console.log(yesSpan);
 						//test
 					}
 
