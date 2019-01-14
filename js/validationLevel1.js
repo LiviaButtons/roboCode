@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 ////        };
 //    });
     
-    console.log ('test1');
+//    console.log ('test1');
     
     let bulletext = document.querySelector('#bulle');
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         
         bulletext.children[0].textContent = "";
         let insertion = textInput.value
-        console.log (insertion);
+//        console.log (insertion);
         
         if(insertion !=""){
             bulletext.classList.remove('none');  
